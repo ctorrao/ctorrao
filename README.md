@@ -2,10 +2,6 @@
 
 ## Introduction
 I'm Carlos, a software and distributed systems engineer currently working for [nos.pt](https://nos.pt) 📺📶
-# Hi there 👋
-
-## Introduction
-I'm Carlos, a software and distributed systems engineer currently working for [nos.pt](https://nos.pt) 📺📶
 
 ![Profile Picture](https://avatars.githubusercontent.com/u/22594902?v=4&size=256)
 
