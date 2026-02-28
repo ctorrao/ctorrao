@@ -24,11 +24,6 @@
 
 ### 💻 Technologies & Tools
 
-<details open>
-<summary><b>Click to expand/collapse</b></summary>
-
-<br/>
-
 **👨‍💻 Languages**
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
@@ -55,8 +50,6 @@
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
-</details>
 
 ---
 
