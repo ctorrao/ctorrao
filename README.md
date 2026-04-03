@@ -78,8 +78,16 @@ Exploring the evolution of information access — from limited resources to the 
 
 <div align="center">
 
-<img src="https://github-stats-alpha.vercel.app/api?username=ctorrao&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&bg_color=0d1117" width="48%" alt="GitHub Stats" />
-<img src="https://streak-stats.demolab.com/?user=ctorrao&theme=github-dark-blue&hide_border=true&background=0d1117" width="48%" alt="GitHub Streak" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-alpha.vercel.app/api?username=ctorrao&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&bg_color=0d1117" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-stats-alpha.vercel.app/api?username=ctorrao&show_icons=true&theme=default&hide_border=true&include_all_commits=true" />
+  <img src="https://github-stats-alpha.vercel.app/api?username=ctorrao&show_icons=true&theme=default&hide_border=true&include_all_commits=true" width="48%" alt="GitHub Stats" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ctorrao&theme=github-dark-blue&hide_border=true&background=0d1117" />
+  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=ctorrao&theme=default&hide_border=true" />
+  <img src="https://streak-stats.demolab.com/?user=ctorrao&theme=default&hide_border=true" width="48%" alt="GitHub Streak" />
+</picture>
 
 </div>
 
