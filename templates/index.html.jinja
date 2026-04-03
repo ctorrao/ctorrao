@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carlos Torrão – Software &amp; Distributed Systems Engineer</title>
+  <title>{{ name }} – {{ role }}</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -327,12 +327,12 @@
     <div class="profile-block">
       <img
         class="avatar"
-        src="https://avatars.githubusercontent.com/u/22594902?v=4"
-        alt="Carlos Torrão"
+        src="{{ avatar_url }}"
+        alt="{{ name }}"
       />
-      <div class="name">Carlos Torrão</div>
-      <div class="role">Software &amp; Distributed Systems Engineer</div>
-      <span class="company">@ nos.pt</span>
+      <div class="name">{{ name }}</div>
+      <div class="role">{{ role }}</div>
+      <span class="company">@ {{ company.name }}</span>
     </div>
 
     <hr class="divider" />
@@ -347,21 +347,16 @@
     <hr class="divider" />
 
     <div class="social-list">
-      <a class="soc-item" href="https://linkedin.com/in/carlostorrao" target="_blank" rel="noopener">
-        🔗 linkedin.com/in/carlostorrao
+      {% for s in social if s.show_html -%}
+      <a class="soc-item" href="{{ s.url }}" target="_blank" rel="noopener">
+        {{ s.html_icon }} {{ s.html_display }}
       </a>
-      <a class="soc-item" href="https://twitter.com/carlostorrao" target="_blank" rel="noopener">
-        🐦 @carlostorrao
-      </a>
-      <a class="soc-item" href="https://github.com/ctorrao" target="_blank" rel="noopener">
-        💻 github.com/ctorrao
-      </a>
-      
+      {% endfor %}
     </div>
 
     <div class="views">
       <img
-        src="https://komarev.com/ghpvc/?username=ctorrao&amp;color=38bdf8&amp;style=flat-square&amp;label=Profile+Views"
+        src="{{ profile_views_url | replace('3498db', '38bdf8') }}"
         alt="Profile Views"
       />
     </div>
@@ -371,32 +366,18 @@
   <main class="main">
 
     <section class="section" id="about">
-      <div class="section-title">Hey, I'm Carlos 👋</div>
+      <div class="section-title">Hey, I'm {{ name.split()[0] }} 👋</div>
       <div class="section-sub">
         Building scalable cloud-native systems and exploring how AI can augment engineering workflows.
       </div>
       <div class="fact-grid">
+        {% for f in quick_facts -%}
         <div class="fact-card">
-          <div class="fact-icon">🏢</div>
-          <div class="fact-label">Company</div>
-          <div class="fact-value">nos.pt</div>
+          <div class="fact-icon">{{ f.icon }}</div>
+          <div class="fact-label">{{ f.label }}</div>
+          <div class="fact-value">{{ f.value }}</div>
         </div>
-        <div class="fact-card">
-          <div class="fact-icon">🎯</div>
-          <div class="fact-label">Focus</div>
-          <div class="fact-value">Cloud-native &amp; Event-driven</div>
-        </div>
-        <div class="fact-card">
-          <div class="fact-icon">🤖</div>
-          <div class="fact-label">Exploring</div>
-          <div class="fact-value">AI in engineering workflows</div>
-        </div>
-        <div class="fact-card">
-          <div class="fact-icon">☁️</div>
-          <div class="fact-label">Architecture</div>
-          <div class="fact-value">Distributed Systems</div>
-        </div>
-        
+        {% endfor %}
       </div>
     </section>
 
@@ -404,64 +385,35 @@
       <div class="section-title">Technologies &amp; Tools</div>
       <div class="section-sub">Languages, cloud platforms, and tools I work with daily.</div>
       <div class="tech-section">
+        {% for group in technologies -%}
         <div class="tech-row">
-          <div class="tech-row-label">Languages</div>
+          <div class="tech-row-label">{{ group.html_label }}</div>
           <div class="chips">
-            <span class="chip">C#</span>
-            <span class="chip">Java</span>
-            <span class="chip">Python</span>
-            <span class="chip">C</span>
-            
+            {% for item in group.tech -%}
+            <span class="chip">{{ item.name }}</span>
+            {% endfor %}
           </div>
         </div>
-        <div class="tech-row">
-          <div class="tech-row-label">Cloud</div>
-          <div class="chips">
-            <span class="chip">Azure</span>
-            <span class="chip">GCP</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Kubernetes</span>
-            
-          </div>
-        </div>
-        <div class="tech-row">
-          <div class="tech-row-label">Data</div>
-          <div class="chips">
-            <span class="chip">MongoDB</span>
-            <span class="chip">SQL Server</span>
-            <span class="chip">RabbitMQ</span>
-            <span class="chip">Kafka</span>
-            
-          </div>
-        </div>
-        <div class="tech-row">
-          <div class="tech-row-label">Tools</div>
-          <div class="chips">
-            <span class="chip">VS Code</span>
-            <span class="chip">Git</span>
-            <span class="chip">GitHub Actions</span>
-            
-          </div>
-        </div>
-        
+        {% endfor %}
       </div>
     </section>
 
     <section class="section" id="talks">
       <div class="section-title">Presentations</div>
       <div class="section-sub">Conference talks and presentations.</div>
+      {% for talk in presentations -%}
       <div class="talk-card">
-        <div class="talk-badge">Cloud Summit 2024 · Apr 2024</div>
-        <div class="talk-title">Artificial Intelligence: Everything Everywhere All at Once</div>
+        <div class="talk-badge">{{ talk.event }} · {{ talk.date }}</div>
+        <div class="talk-title">{{ talk.title }}</div>
         <div class="talk-desc">
-          Exploring the evolution of information access — from limited resources to the era of abundant information. How AI is augmenting our tools and shaping the future.
+          {{ talk.description }}
         </div>
         <div class="talk-links">
-          <a href="https://www.youtube.com/watch?v=sUz8JE7fuFA" target="_blank" rel="noopener">📹 Video</a>
-          <a href="presentations/2024_CloudSummit_AI_Everything_Everywhere_All_at_Once.pdf">📊 Slides</a>
+          <a href="{{ talk.video_url }}" target="_blank" rel="noopener">📹 Video</a>
+          <a href="{{ talk.slides_path }}">📊 Slides</a>
         </div>
       </div>
-      
+      {% endfor %}
     </section>
 
     <section class="section" id="stats">
@@ -471,10 +423,10 @@
         <picture>
           <source
             media="(prefers-color-scheme: dark)"
-            srcset="https://github-stats-alpha.vercel.app/api?username=ctorrao&amp;show_icons=true&amp;theme=github_dark&amp;hide_border=true&amp;include_all_commits=true&amp;bg_color=0d1117"
+            srcset="{{ stats.stats_url_dark }}"
           />
           <img
-            src="https://github-stats-alpha.vercel.app/api?username=ctorrao&amp;show_icons=true&amp;theme=default&amp;hide_border=true&amp;include_all_commits=true"
+            src="{{ stats.stats_url_light }}"
             style="width: 48%"
             alt="GitHub Stats"
           />
@@ -482,10 +434,10 @@
         <picture>
           <source
             media="(prefers-color-scheme: dark)"
-            srcset="https://streak-stats.demolab.com/?user=ctorrao&amp;theme=github-dark-blue&amp;hide_border=true&amp;background=0d1117"
+            srcset="{{ stats.streak_url_dark }}"
           />
           <img
-            src="https://streak-stats.demolab.com/?user=ctorrao&amp;theme=default&amp;hide_border=true"
+            src="{{ stats.streak_url_light }}"
             style="width: 48%"
             alt="GitHub Streak"
           />
@@ -494,10 +446,10 @@
     </section>
 
     <footer>
-      💬 Feel free to reach out — I&#39;m always happy to chat about distributed systems, cloud architecture, or AI! &nbsp;·&nbsp;
-      <a href="https://linkedin.com/in/carlostorrao" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp; 
-      <a href="https://twitter.com/carlostorrao" target="_blank" rel="noopener">Twitter</a>
-      
+      💬 {{ footer_message }} &nbsp;·&nbsp;
+      {% for s in social if s.show_html and s.platform != 'GitHub' -%}
+      <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.platform }}</a>{% if not loop.last %} &nbsp;·&nbsp; {% endif %}
+      {% endfor %}
     </footer>
 
   </main>

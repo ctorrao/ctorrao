@@ -1,0 +1,149 @@
+{
+  "name": "Carlos Torrão",
+  "username": "ctorrao",
+  "avatar_url": "https://avatars.githubusercontent.com/u/22594902?v=4",
+  "avatar_size": 200,
+  "role": "Software & Distributed Systems Engineer",
+  "company": {
+    "name": "nos.pt",
+    "url": "https://nos.pt"
+  },
+  "taglines": [
+    "Software & Distributed Systems Engineer",
+    "Building scalable systems at nos.pt",
+    "Cloud-native enthusiast",
+    "Lifelong learner"
+  ],
+  "quick_facts": [
+    {
+      "icon":        "🏢",
+      "label":       "Company",
+      "value":       "nos.pt",
+      "readme_text": "Software & Distributed Systems Engineer at [**nos.pt**](https://nos.pt) 📺📶"
+    },
+    {
+      "icon":        "🎯",
+      "label":       "Focus",
+      "value":       "Cloud-native & Event-driven",
+      "readme_text": "Focused on **cloud-native architectures** and **event-driven systems**"
+    },
+    {
+      "icon":        "🤖",
+      "label":       "Exploring",
+      "value":       "AI in engineering workflows",
+      "readme_text": "Exploring how **AI** can augment engineering workflows"
+    },
+    {
+      "icon":        "☁️",
+      "label":       "Architecture",
+      "value":       "Distributed Systems",
+      "readme_text": null
+    }
+  ],
+  "social": [
+    {
+      "platform":          "LinkedIn",
+      "url":               "https://linkedin.com/in/carlostorrao",
+      "show_readme":       true,
+      "readme_handle":     "carlostorrao",
+      "readme_badge_color":"0A66C2",
+      "readme_badge_logo": "linkedin",
+      "show_html":         true,
+      "html_icon":         "🔗",
+      "html_display":      "linkedin.com/in/carlostorrao"
+    },
+    {
+      "platform":          "Twitter",
+      "url":               "https://twitter.com/carlostorrao",
+      "show_readme":       true,
+      "readme_handle":     "carlostorrao",
+      "readme_badge_color":"1DA1F2",
+      "readme_badge_logo": "twitter",
+      "show_html":         true,
+      "html_icon":         "🐦",
+      "html_display":      "@carlostorrao"
+    },
+    {
+      "platform":          "GitHub",
+      "url":               "https://github.com/ctorrao",
+      "show_readme":       false,
+      "show_html":         true,
+      "html_icon":         "💻",
+      "html_display":      "github.com/ctorrao"
+    },
+    {
+      "platform":          "Website",
+      "url":               "https://ctorrao.github.io/ctorrao/",
+      "show_readme":       true,
+      "readme_handle":     "ctorrao.github.io",
+      "readme_badge_color":"FF5722",
+      "readme_badge_logo": "google-chrome",
+      "show_html":         false
+    }
+  ],
+  "technologies": [
+    {
+      "category":    "Languages",
+      "readme_icon": "👨‍💻",
+      "html_label":  "Languages",
+      "tech": [
+        { "name": "C#",     "badge_url": "https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white"          },
+        { "name": "Java",   "badge_url": "https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"         },
+        { "name": "Python", "badge_url": "https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"        },
+        { "name": "C",      "badge_url": "https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white"                  }
+      ]
+    },
+    {
+      "category":    "Cloud & Infrastructure",
+      "readme_icon": "☁️",
+      "html_label":  "Cloud",
+      "tech": [
+        { "name": "Azure",      "badge_url": "https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white"    },
+        { "name": "GCP",        "badge_url": "https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white"         },
+        { "name": "Docker",     "badge_url": "https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"           },
+        { "name": "Kubernetes", "badge_url": "https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"   }
+      ]
+    },
+    {
+      "category":    "Data & Messaging",
+      "readme_icon": "🗄️",
+      "html_label":  "Data",
+      "tech": [
+        { "name": "MongoDB",    "badge_url": "https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"            },
+        { "name": "SQL Server", "badge_url": "https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" },
+        { "name": "RabbitMQ",   "badge_url": "https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white"          },
+        { "name": "Kafka",      "badge_url": "https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white"          }
+      ]
+    },
+    {
+      "category":    "Tools",
+      "readme_icon": "🔧",
+      "html_label":  "Tools",
+      "tech": [
+        { "name": "VS Code",        "badge_url": "https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" },
+        { "name": "Git",            "badge_url": "https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"                  },
+        { "name": "GitHub Actions", "badge_url": "https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" }
+      ]
+    }
+  ],
+  "presentations": [
+    {
+      "date":        "Apr 2024",
+      "event":       "Cloud Summit 2024",
+      "event_url":   "https://web.archive.org/web/20240420184736/https://www.cloudsummit.pt/",
+      "title":       "Artificial Intelligence: Everything Everywhere All at Once",
+      "description": "Exploring the evolution of information access — from limited resources to the era of abundant information. How AI is augmenting our tools and shaping the future.",
+      "video_url":   "https://www.youtube.com/watch?v=sUz8JE7fuFA",
+      "slides_path": "presentations/2024_CloudSummit_AI_Everything_Everywhere_All_at_Once.pdf"
+    }
+  ],
+  "stats": {
+    "username": "ctorrao",
+    "stats_url_light":  "https://github-stats-alpha.vercel.app/api?username=ctorrao&show_icons=true&theme=default&hide_border=true&include_all_commits=true",
+    "stats_url_dark":   "https://github-stats-alpha.vercel.app/api?username=ctorrao&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&bg_color=0d1117",
+    "streak_url_light": "https://streak-stats.demolab.com/?user=ctorrao&theme=default&hide_border=true",
+    "streak_url_dark":  "https://streak-stats.demolab.com/?user=ctorrao&theme=github-dark-blue&hide_border=true&background=0d1117"
+  },
+  "profile_views_url": "https://komarev.com/ghpvc/?username=ctorrao&color=3498db&style=flat-square&label=Profile+Views",
+  "footer_message": "Feel free to reach out — I'm always happy to chat about distributed systems, cloud architecture, or AI!"
+}
