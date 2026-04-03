@@ -20,9 +20,11 @@
 - 🎯 Focused on **cloud-native architectures** and **event-driven systems**
 - 🤖 Exploring how **AI** can augment engineering workflows
 
+
 ---
 
 ### 💻 Technologies & Tools
+
 
 **👨‍💻 Languages**
 
@@ -31,12 +33,14 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 
+
 **☁️ Cloud & Infrastructure**
 
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+
 
 **🗄️ Data & Messaging**
 
@@ -45,11 +49,14 @@
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
 ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
 
+
 **🔧 Tools**
 
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+
 
 ---
 
@@ -70,6 +77,7 @@ Exploring the evolution of information access — from limited resources to the 
 
 </td>
 </tr>
+
 </table>
 
 ---

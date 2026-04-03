@@ -1,0 +1,84 @@
+<div align="center">
+
+# Hey there! I'm {{ name }} 👋
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=3498DB&center=true&vCenter=true&width=500&lines={{ taglines | typing_svg_lines }})](https://git.io/typing-svg)
+
+<img src="{{ avatar_url }}&size={{ avatar_size }}" width="150" style="border-radius: 50%;" alt="{{ name }}" />
+
+{% for s in social if s.show_readme -%}
+[![{{ s.platform }}](https://img.shields.io/badge/-{{ s.readme_handle }}-{{ s.readme_badge_color }}?style=flat&logo={{ s.readme_badge_logo }}&logoColor=white)]({{ s.url }})
+{% endfor %}
+</div>
+
+---
+
+### 🚀 Quick Facts
+
+{% for f in quick_facts if f.readme_text -%}
+- {{ f.icon }} {{ f.readme_text }}
+{% endfor %}
+
+---
+
+### 💻 Technologies & Tools
+
+{% for group in technologies %}
+**{{ group.readme_icon }} {{ group.category }}**
+
+{% for item in group.tech -%}
+![{{ item.name }}]({{ item.badge_url }})
+{% endfor %}
+{% endfor %}
+
+---
+
+### 📊 Presentations
+
+<table>
+{% for talk in presentations -%}
+<tr>
+<td width="120" align="center">
+<b>📅 {{ talk.date }}</b>
+</td>
+<td>
+
+**{{ talk.title }}**
+
+{{ talk.description }}
+
+[📹 Video]({{ talk.video_url }}) · [📊 Slides]({{ talk.slides_path }}) · [🌐 {{ talk.event }}]({{ talk.event_url }})
+
+</td>
+</tr>
+{% endfor %}
+</table>
+
+---
+
+### 📈 GitHub Activity
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="{{ stats.stats_url_dark }}" />
+  <source media="(prefers-color-scheme: light)" srcset="{{ stats.stats_url_light }}" />
+  <img src="{{ stats.stats_url_light }}" width="48%" alt="GitHub Stats" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="{{ stats.streak_url_dark }}" />
+  <source media="(prefers-color-scheme: light)" srcset="{{ stats.streak_url_light }}" />
+  <img src="{{ stats.streak_url_light }}" width="48%" alt="GitHub Streak" />
+</picture>
+
+</div>
+
+---
+
+<div align="center">
+
+💬 *{{ footer_message }}*
+
+![Profile Views]({{ profile_views_url }})
+
+</div>
