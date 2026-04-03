@@ -78,8 +78,8 @@ Exploring the evolution of information access — from limited resources to the 
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=ctorrao&show_icons=true&theme=github_dark&hide_border=true&count_private=true&bg_color=0d1117" width="48%" alt="GitHub Stats" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=ctorrao&theme=github-dark-blue&hide_border=true&background=0d1117" width="48%" alt="GitHub Streak" />
+<img src="https://github-stats-alpha.vercel.app/api?username=ctorrao&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&bg_color=0d1117" width="48%" alt="GitHub Stats" />
+<img src="https://streak-stats.demolab.com/?user=ctorrao&theme=github-dark-blue&hide_border=true&background=0d1117" width="48%" alt="GitHub Streak" />
 
 </div>
 
